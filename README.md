@@ -17,10 +17,10 @@ Modelin yapısı şu şekildedir:
 
 model = Sequential()
 model.add(Flatten(input_shape=(224, 224)))
+model.add(Dense(1024, activation='relu'))
 model.add(Dense(512, activation='relu'))
 model.add(Dense(256, activation='relu'))
 model.add(Dense(128, activation='relu'))
-model.add(Dense(64, activation='relu'))
 model.add(Dense(9, activation='softmax'))
 
 
